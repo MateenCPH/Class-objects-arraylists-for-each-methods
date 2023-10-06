@@ -14,7 +14,7 @@ public class Main {
         addWeatherData(weatherDataList, data2);
         addWeatherData(weatherDataList, data3);
 
-        //displayWeatherData(weatherDataList);
+        displayWeatherData(weatherDataList);
 
         findCitiesWithHighHumidity(weatherDataList, 38);
     }
@@ -24,15 +24,15 @@ public class Main {
     }
 
     public static void displayWeatherData(ArrayList<WeatherData> weatherDataList) {
-        for (WeatherData weatherdata : weatherDataList) {
-            System.out.println(weatherdata);
+        for (WeatherData weatherdata : weatherDataList) { //forklaret: for hver ojekt af WeatherData : i vores arrayliste weatherDataList
+            System.out.println(weatherdata); //gør det her
         }
     }
 
     public static void findCitiesWithHighHumidity(ArrayList<WeatherData> weatherDataList, int threshold) {
-        for (WeatherData weatherdata : weatherDataList) {
-            if (weatherdata.getHumidity() >= threshold) {
-                System.out.println(weatherdata);
+        for (WeatherData weatherdata : weatherDataList) { //som forklaret på linje 27
+            if (weatherdata.getHumidity() >= threshold) { //HVIS de her betingelser er opfylds
+                System.out.println(weatherdata);           //SÅ gør det her
             }
         }
     }
