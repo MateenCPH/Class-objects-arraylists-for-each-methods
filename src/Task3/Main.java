@@ -10,27 +10,31 @@ public class Main {
         Book book3 = new Book("Jæger - i krig med eliten", "Thomas Rathsack", 2009);
 
         addBooks(bookInventory, book1);
-        addBooks(bookInventory, book2);
-        addBooks(bookInventory, book2);
+        addBooks(bookInventory, book2); //vi bruger metoden addBooks til at tilføje objekter af datatypen Book
+        addBooks(bookInventory, book3); //til vores arrayliste 'bookInventory'
 
-        displayBooks(bookInventory);
-        findBooksPublishedBeforeYear(bookInventory,2020);
-    }
+        displayBooks(bookInventory);    //vi bruger metoden 'displayBooks' til at printe alle bøger i output
+
+        findBooksPublishedBeforeYear(bookInventory,2010);   //vi bruger metoden 'findBooksPub... til at printe
+    }                                      //alle bøger der er udgivet før det angivne årstal i parameteren
 
     public static void addBooks(ArrayList<Book> bookInventory, Book book) {
-        bookInventory.add(book);
-    }
+        bookInventory.add(book);    //Metode der hjælper med at tilføje objekter af typen 'Book' til vores arrayliste
+    }                               //'bookInventory'
 
     public static void displayBooks(ArrayList<Book> bookInventory) {
         for (Book book : bookInventory) {
+            //(for hver book af datatypen Book : i vores arrayliste 'bookInventory)
             System.out.println(book);
         }
     }
 
     public static void findBooksPublishedBeforeYear(ArrayList<Book> bookInventory, int year) {
         for (Book book : bookInventory) {
+            //(for hver book af datatypen Book : i vores arrayliste 'bookInventory)
             if (book.getPublicationYear() < year) {
-                System.out.println(book);
+                //hvis book's publicationyear er mindre end det angivne year i parameteren
+                System.out.println("This/these book(s) were published before year " + year + ": " + book);//så gør dette
             }
         }
 
