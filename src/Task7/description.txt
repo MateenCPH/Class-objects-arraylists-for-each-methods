@@ -1,0 +1,32 @@
+Task 5: Employee Management System
+In this task, you'll create a basic Employee Management System. You'll define classes to represent employees, an
+employee database, and perform operations like adding, searching, and displaying employee information.
+
+5.a Create an Employee class with the following attributes (use appropriate data types and make them private):
+
+int employeeID
+String firstName
+String lastName
+double salary
+int age
+5.b Create a constructor for the Employee class that initializes these attributes.
+
+5.c Create an EmployeeDatabase class with an ArrayList of Employee objects. Implement methods to:
+
+Add a new employee to the database.
+Search for an employee by their employee ID.
+Display a list of all employees in the database.
+Calculate and display the average salary of all employees.
+5.d Create a Main class with a main method.
+
+5.e In the main method, create an instance of the EmployeeDatabase class.
+
+5.f Implement a menu-driven program in the main method that allows the user to:
+
+Add a new employee to the database.
+Search for an employee by their employee ID and display their information.
+Display a list of all employees in the database.
+Calculate and display the average salary of all employees.
+Exit the program.
+These additional tasks should provide you with opportunities to practice working with classes, data structures,
+and user interaction in your Java project.
