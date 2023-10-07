@@ -1,0 +1,30 @@
+Task 6: Managing Student Records
+In this task, you'll create a simple program to manage student records. You'll define classes to represent students and
+a student database, and then perform operations like adding, searching, and displaying student information.
+
+6.a Create a Student class with the following attributes (use appropriate data types and make them private):
+
+String studentID
+String firstName
+String lastName
+int age
+double gpa
+6.b Create a constructor for the Student class that initializes these attributes.
+
+6.c Create a StudentDatabase class with an ArrayList of Student objects. Implement methods to:
+
+Add a new student to the database.
+Search for a student by their student ID.
+Display all students in the database.
+Calculate and display the average GPA of all students.
+6.d Create a Main class with a main method.
+
+6.e In the main method, create an instance of the StudentDatabase class.
+
+6.f Implement a menu-driven program in the main method that allows the user to:
+
+Add a new student to the database.
+Search for a student by their student ID and display their information.
+Display a list of all students in the database.
+Calculate and display the average GPA of all students.
+Exit the program.
